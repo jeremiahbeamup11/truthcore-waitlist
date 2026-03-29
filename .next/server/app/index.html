@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/151a57e3fe583776.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-82b2ba201d35e58a.js"/><script src="/_next/static/chunks/fd9d1056-be48aeae6e94b8d1.js" async=""></script><script src="/_next/static/chunks/23-ce560e6ceb275f11.js" async=""></script><script src="/_next/static/chunks/main-app-a3d35d92e2d94eb5.js" async=""></script><script src="/_next/static/chunks/44530001-3911c617b0c637ca.js" async=""></script><script src="/_next/static/chunks/730-213d25236289da5a.js" async=""></script><script src="/_next/static/chunks/app/page-8129358793583631.js" async=""></script><title>Truthcore AI — Fact-check any viral video in seconds</title><meta name="description" content="Paste a TikTok, Instagram, or YouTube link. Truthcore extracts every claim and verifies each one with real sources. Launching April 28, 2026."/><meta property="og:title" content="Truthcore AI — Stop sharing lies you didn&#x27;t check."/><meta property="og:description" content="AI-powered fact-checking for viral videos. Launching April 28, 2026. Join the waitlist for 30 days Pro free."/><meta property="og:url" content="https://truthcore.ai"/><meta property="og:site_name" content="Truthcore AI"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:creator" content="@TruthcoreAI"/><meta name="twitter:title" content="Truthcore AI — Stop sharing lies you didn&#x27;t check."/><meta name="twitter:description" content="AI fact-checking for TikTok, Instagram &amp; YouTube. Launching April 28."/><script src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" noModule=""></script></head><body><style>
+        @import url(&#x27;https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap&#x27;);
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { background: #080808; color: #f0f0f0; font-family: &#x27;DM Sans&#x27;, sans-serif; min-height: 100vh; }
+
+        @keyframes flicker {
+          0%, 100% { opacity: 1; }
+          92% { opacity: 1; }
+          93% { opacity: 0.4; }
+          94% { opacity: 1; }
+          96% { opacity: 0.6; }
+          97% { opacity: 1; }
+        }
+
+        @keyframes scanline {
+          0% { transform: translateY(-100%); }
+          100% { transform: translateY(100vh); }
+        }
+
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(24px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseGreen {
+          0%, 100% { box-shadow: 0 0 0 0 rgba(110,231,183,0.4); }
+          50% { box-shadow: 0 0 0 8px rgba(110,231,183,0); }
+        }
+
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+
+        @keyframes glitch {
+          0%, 100% { clip-path: inset(0 0 100% 0); transform: translate(0); }
+          20% { clip-path: inset(20% 0 60% 0); transform: translate(-4px, 2px); }
+          40% { clip-path: inset(50% 0 30% 0); transform: translate(4px, -2px); }
+          60% { clip-path: inset(10% 0 80% 0); transform: translate(-2px, 4px); }
+          80% { clip-path: inset(70% 0 10% 0); transform: translate(2px, -4px); }
+        }
+
+        .ticker-track {
+          display: flex;
+          width: max-content;
+          animation: marquee 24s linear infinite;
+        }
+
+        .ticker-track:hover { animation-play-state: paused; }
+
+        input, select {
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.1);
+          color: #f0f0f0;
+          font-family: &#x27;DM Sans&#x27;, sans-serif;
+          font-size: 15px;
+          padding: 14px 18px;
+          border-radius: 6px;
+          outline: none;
+          width: 100%;
+          transition: border-color 0.2s, background 0.2s;
+          -webkit-appearance: none;
+        }
+
+        input:focus, select:focus {
+          border-color: rgba(110,231,183,0.5);
+          background: rgba(110,231,183,0.03);
+        }
+
+        input::placeholder { color: rgba(240,240,240,0.25); }
+
+        select option { background: #111; color: #f0f0f0; }
+
+        .submit-btn {
+          width: 100%;
+          padding: 16px;
+          background: #6ee7b7;
+          color: #080808;
+          font-family: &#x27;Bebas Neue&#x27;, sans-serif;
+          font-size: 22px;
+          letter-spacing: 0.08em;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.2s;
+          animation: pulseGreen 2.5s ease-in-out infinite;
+        }
+
+        .submit-btn:hover:not(:disabled) {
+          background: #a7f3d0;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 32px rgba(110,231,183,0.3);
+        }
+
+        .submit-btn:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+          animation: none;
+        }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #080808; }
+        ::-webkit-scrollbar-thumb { background: #2a2a2a; }
+        ::selection { background: rgba(110,231,183,0.2); }
+      </style><div style="position:fixed;inset:0;pointer-events:none;z-index:100;background:repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px)"></div><div style="position:fixed;inset:0;pointer-events:none;z-index:99;opacity:0.025;background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox=&#x27;0 0 256 256&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%3E%3Cfilter id=&#x27;noise&#x27;%3E%3CfeTurbulence type=&#x27;fractalNoise&#x27; baseFrequency=&#x27;0.9&#x27; numOctaves=&#x27;4&#x27; stitchTiles=&#x27;stitch&#x27;/%3E%3C/filter%3E%3Crect width=&#x27;100%25&#x27; height=&#x27;100%25&#x27; filter=&#x27;url(%23noise)&#x27;/%3E%3C/svg%3E&quot;)"></div><div style="background:#6ee7b7;color:#080808;padding:8px 0;overflow:hidden;position:relative"><div class="ticker-track"><span style="font-family:&#x27;Bebas Neue&#x27;, sans-serif;font-size:14px;letter-spacing:0.1em;white-space:nowrap;padding-right:48px">AI FACT INTELLIGENCE  ·  EVERY CLAIM VERIFIED  ·  REAL SOURCES  ·  NO SPIN  ·  COMING SOON  · </span><span style="font-family:&#x27;Bebas Neue&#x27;, sans-serif;font-size:14px;letter-spacing:0.1em;white-space:nowrap;padding-right:48px">AI FACT INTELLIGENCE  ·  EVERY CLAIM VERIFIED  ·  REAL SOURCES  ·  NO SPIN  ·  COMING SOON  · </span><span style="font-family:&#x27;Bebas Neue&#x27;, sans-serif;font-size:14px;letter-spacing:0.1em;white-space:nowrap;padding-right:48px">AI FACT INTELLIGENCE  ·  EVERY CLAIM VERIFIED  ·  REAL SOURCES  ·  NO SPIN  ·  COMING SOON  · </span><span style="font-family:&#x27;Bebas Neue&#x27;, sans-serif;font-size:14px;letter-spacing:0.1em;white-space:nowrap;padding-right:48px">AI FACT INTELLIGENCE  ·  EVERY CLAIM VERIFIED  ·  REAL SOURCES  ·  NO SPIN  ·  COMING SOON  · </span><span style="font-family:&#x27;Bebas Neue&#x27;, sans-serif;font-size:14px;letter-spacing:0.1em;white-space:nowrap;padding-right:48px">AI FACT INTELLIGENCE  ·  EVERY CLAIM VERIFIED  ·  REAL SOURCES  ·  NO SPIN  ·  COMING SOON  · </span><span style="font-family:&#x27;Bebas Neue&#x27;, sans-serif;font-size:14px;letter-spacing:0.1em;white-space:nowrap;padding-right:48px">AI FACT INTELLIGENCE  ·  EVERY CLAIM VERIFIED  ·  REAL SOURCES  ·  NO SPIN  ·  COMING SOON  · </span></div></div><main style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 24px 80px;position:relative"><div style="position:fixed;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle, rgba(110,231,183,0.06) 0%, transparent 70%);top:50%;left:50%;transform:translate(-50%, -50%);pointer-events:none"></div><div style="width:100%;max-width:560px;animation:fadeUp 0.7s ease both"><div style="margin-bottom:48px;text-align:center"><div style="display:inline-flex;align-items:center;gap:10px;margin-bottom:32px"><div style="width:10px;height:10px;border-radius:50%;background:#6ee7b7;box-shadow:0 0 12px rgba(110,231,183,0.8);animation:pulseGreen 2s ease-in-out infinite"></div><span style="font-family:&#x27;DM Sans&#x27;, sans-serif;font-size:13px;color:rgba(110,231,183,0.8);letter-spacing:0.15em;text-transform:uppercase">Early Access</span></div><h1 style="font-family:&#x27;Bebas Neue&#x27;, sans-serif;font-size:clamp(72px, 14vw, 120px);line-height:0.9;letter-spacing:-0.01em;color:#f0f0f0;margin-bottom:8px;animation:flicker 8s ease-in-out infinite">TRUTH<span style="color:#6ee7b7">CORE</span></h1><p style="font-family:&#x27;Bebas Neue&#x27;, sans-serif;font-size:clamp(16px, 3vw, 22px);letter-spacing:0.2em;color:rgba(240,240,240,0.35);margin-bottom:28px;text-transform:uppercase">AI Fact Intelligence</p><p style="font-size:16px;color:rgba(240,240,240,0.55);line-height:1.7;max-width:420px;margin:0 auto">Paste any social media video or news article. Get every claim fact-checked with real sources in seconds. No spin. No agenda. Just truth.</p></div><div style="display:flex;gap:1px;margin-bottom:40px;background:rgba(255,255,255,0.06);border-radius:8px;overflow:hidden"><div style="flex:1;padding:14px 12px;text-align:center;background:rgba(255,255,255,0.02)"><div style="font-size:11px;color:rgba(240,240,240,0.3);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px">Platforms</div><div style="font-size:12px;font-weight:600;color:#6ee7b7">TikTok · IG · YT · X</div></div><div style="flex:1;padding:14px 12px;text-align:center;background:rgba(255,255,255,0.02)"><div style="font-size:11px;color:rgba(240,240,240,0.3);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px">Per Analysis</div><div style="font-size:12px;font-weight:600;color:#6ee7b7">Up to 9 Claims</div></div><div style="flex:1;padding:14px 12px;text-align:center;background:rgba(255,255,255,0.02)"><div style="font-size:11px;color:rgba(240,240,240,0.3);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px">Status</div><div style="font-size:12px;font-weight:600;color:#6ee7b7">Coming Soon</div></div></div><form style="display:flex;flex-direction:column;gap:12px"><div style="display:flex;gap:12px"><input type="text" placeholder="Your name" required="" value=""/><input type="email" placeholder="Your email" required="" value=""/></div><select required=""><option value="" disabled="" selected="">How will you use Truthcore?</option><option value="Fact-checking news articles">Fact-checking news articles</option><option value="Verifying social media videos">Verifying social media videos</option><option value="Research &amp; journalism">Research &amp; journalism</option><option value="Personal media literacy">Personal media literacy</option><option value="Education">Education</option><option value="Other">Other</option></select><button type="submit" class="submit-btn" disabled="">GET EARLY ACCESS →</button><p style="font-size:12px;color:rgba(240,240,240,0.2);text-align:center;margin-top:4px">No spam. No BS. Just access when it drops.</p></form><div style="margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px"><span style="font-family:&#x27;Bebas Neue&#x27;, sans-serif;font-size:18px;color:rgba(240,240,240,0.15);letter-spacing:0.05em">TRUTHCORE AI, INC.</span><span style="font-size:12px;color:rgba(240,240,240,0.2)">© 2026</span></div></div></main><script src="/_next/static/chunks/webpack-82b2ba201d35e58a.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/css/151a57e3fe583776.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"2:I[5751,[],\"\"]\n4:I[6513,[],\"ClientPageRoot\"]\n5:I[6774,[\"762\",\"static/chunks/44530001-3911c617b0c637ca.js\",\"730\",\"static/chunks/730-213d25236289da5a.js\",\"931\",\"static/chunks/app/page-8129358793583631.js\"],\"default\"]\n6:I[9275,[],\"\"]\n7:I[1343,[],\"\"]\n9:I[6130,[],\"\"]\na:[]\n0:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/151a57e3fe583776.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"$L2\",null,{\"buildId\":\"0cycUcXUweU2FURs615IA\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/\",\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"__PAGE__\",{},[[\"$L3\",[\"$\",\"$L4\",null,{\"props\":{\"params\":{},\"searchParams\":{}},\"Component\":\"$5\"}]],null],null]},[[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\""])</script><script>self.__next_f.push([1,"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"styles\":null}]}]}],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L8\"],\"globalErrorComponent\":\"$9\",\"missingSlots\":\"$Wa\"}]]\n"])</script><script>self.__next_f.push([1,"8:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Truthcore AI — Fact-check any viral video in seconds\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Paste a TikTok, Instagram, or YouTube link. Truthcore extracts every claim and verifies each one with real sources. Launching April 28, 2026.\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:title\",\"content\":\"Truthcore AI — Stop sharing lies you didn't check.\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:description\",\"content\":\"AI-powered fact-checking for viral videos. Launching April 28, 2026. Join the waitlist for 30 days Pro free.\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:url\",\"content\":\"https://truthcore.ai\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:site_name\",\"content\":\"Truthcore AI\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:creator\",\"content\":\"@TruthcoreAI\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:title\",\"content\":\"Truthcore AI — Stop sharing lies you didn't check.\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:description\",\"content\":\"AI fact-checking for TikTok, Instagram \u0026 YouTube. Launching April 28.\"}]]\n3:null\n"])</script></body></html>
