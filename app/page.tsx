@@ -251,7 +251,7 @@ export default function WaitlistPage() {
           }}>
             {[
               { label: "Platforms", value: "TikTok · IG · YT · X" },
-              { label: "Per Analysis", value: "Up to 9 Claims" },
+              { label: "Per Analysis", value: "Every Claim Extracted" },
               { label: "Status", value: "Coming Soon" },
             ].map((stat, i) => (
               <div key={i} style={{
