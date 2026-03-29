@@ -208,7 +208,7 @@ export default function WaitlistPage() {
                 animation: "pulseGreen 2s ease-in-out infinite",
               }} />
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "13px", color: "rgba(110,231,183,0.8)", letterSpacing: "0.15em", textTransform: "uppercase" }}>
-                Early Access
+                Coming Soon
               </span>
             </div>
 
@@ -277,7 +277,7 @@ export default function WaitlistPage() {
                 YOU'RE IN
               </h2>
               <p style={{ fontSize: "15px", color: "rgba(240,240,240,0.5)", lineHeight: "1.6" }}>
-                We'll hit you when access opens. Keep your eyes open — this drops soon.
+                We'll notify you the moment Truthcore launches. Stay tuned.
               </p>
             </div>
           ) : (
@@ -320,11 +320,11 @@ export default function WaitlistPage() {
                 className="submit-btn"
                 disabled={loading || !name.trim() || !email.trim() || !useCase}
               >
-                {loading ? "SECURING YOUR SPOT..." : "GET EARLY ACCESS →"}
+                {loading ? "JOINING THE WAITLIST..." : "JOIN THE WAITLIST →"}
               </button>
 
               <p style={{ fontSize: "12px", color: "rgba(240,240,240,0.2)", textAlign: "center", marginTop: "4px" }}>
-                No spam. No BS. Just access when it drops.
+                No spam. We'll only email you when we launch.
               </p>
             </form>
           )}
