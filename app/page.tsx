@@ -168,7 +168,7 @@ export default function WaitlistPage() {
             </div>
 
             <h1 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: "800", letterSpacing: "-0.03em", color: "#d8dade", fontFamily: "'Syne', sans-serif", marginBottom: "10px", lineHeight: "1.1" }}>
-              Fact-check anything.
+              Fact-check your media.
             </h1>
 
             <p style={{ fontSize: "13px", color: "rgba(232,234,240,0.3)", fontFamily: "'Syne', sans-serif", lineHeight: "1.65", maxWidth: "340px", margin: "0 auto" }}>
